@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<routes>
+<!-- <routes xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd" >  -->
+    <route method="GET" url="/V1/mastering">
+        <service class="Mastering\SampleModule\Api\ItemRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
